@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- Default Main Template -->
+    <definition name="mau01" template="/WEB-INF/templates/mau01.jsp">
+        <put-attribute name="tieuDe" value="Trang mẫu 01" type="string" />
+        <put-attribute name="dauTrang" value="/WEB-INF/templates/dau-trang.jsp" />
+        <put-attribute name="cuoiTrang" value="/WEB-INF/templates/cuoi-trang.jsp" />
+        <put-attribute name="thucDon" value="/WEB-INF/templates/thuc-don.jsp" />
+        <put-attribute name="noiDung" value="" />
+    </definition>
+     <definition name="chao" extends="mau01">
+    	<put-attribute name="tieuDe" value="Home" type="string" />
+        <put-attribute name="noiDung" value="/WEB-INF/views/home.jsp" />
+    </definition>
+    <definition name="loaiSua" extends="mau01">
+    	<put-attribute name="tieuDe" value="Loại sữa" type="string" />
+        <put-attribute name="noiDung" value="/WEB-INF/views/loai-sua.jsp" />
+    </definition>
+    <definition name="themLoaiSua3" extends="mau01">
+    	<put-attribute name="tieuDe" value="Thêm Loại sữa" type="string" />
+        <put-attribute name="noiDung" value="/WEB-INF/views/them-loai-sua-3.jsp" />
+    </definition>
+    <definition name="authors" extends="mau01">
+    	<put-attribute name="tieuDe" value="Authors" type="string" />
+        <put-attribute name="noiDung" value="/WEB-INF/views/authors.jsp" />
+    </definition>
+    <definition name="add-author" extends="mau01">
+    	<put-attribute name="tieuDe" value="Add Author" type="string" />
+        <put-attribute name="noiDung" value="/WEB-INF/views/add-author.jsp" />
+    </definition>
+
+</tiles-definitions>

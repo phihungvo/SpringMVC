@@ -1,0 +1,6 @@
+@charset "UTF-8";
+*{box-sizing: border-box;margin:0;padding:0}
+header, footer{width:100%;height:100px;background-color:lightblue;}
+main{width:100%;display:flex;}
+nav{width:20%;background-color:khaki;}
+article{width:80%;background-color:lightyellow;}
